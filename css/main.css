@@ -15,34 +15,21 @@ html,body{
  *, *:before, *:after {box-sizing:  border-box !important;}
 
 
- .controls {
-  -moz-column-width: 15em;
-  -webkit-column-width: 15em;
-  -moz-column-gap: 0.2em;
-  -webkit-column-gap: 0.2em; 
-   
+ .controls{
+    width: 50%;
+    margin:0 auto;
+    margin-top:20px;
  }
 
- .legenditem {
-  display: inline-block;
-  margin:  0.25rem;
-  padding:  2px;
-  width:  100%; 
-  background:  #efefef;
-  cursor: pointer;
+ .animate{
+  width:100%;
  }
 
-
-.legenditem .legendcolor{
-    display: inline-block;
-    border: 1px solid #eee;
-    width: 20px;  
-    height: 20px;
-}
-
-.legenditem .legendname{
-    
-}
+ .timestamp{
+  margin-top: 20px;
+  font-size: 20px;
+  text-align: center;
+ } 
 /**
  * Overrides
  */
