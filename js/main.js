@@ -35,7 +35,9 @@ var updateMap = _.throttle(function(timestamp) {
     });
     $('#timestamp').text(new Date(timestamp));
     wmsLayer.setVisible(true);
-}, 2000);
+}, 500,{
+  leading: false
+});
 fetch('http://oos.soest.hawaii.edu/erddap/wms/NOAA_DHW_5km/request?service=WMS&request=GetCapabilities&version=1.3.0').then(function(response) {
     return response.text();
 }).then(function(text) {
